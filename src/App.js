@@ -14,7 +14,7 @@ const currentUrl = `https://api.openweathermap.org/data/2.5/weather`;
 const fiveDayUrl = `https://api.openweathermap.org/data/2.5/forecast`;
 
 
-const apiKey = process.env.REACT_APP_API_KEY;
+const apiKey = '7ef98c2e3b5b9ceea5c1d9fc071a8c85';//process.env.REACT_APP_API_KEY;
 
 const fetchAll = async(setState, searchParams) => {
   const state = {};
