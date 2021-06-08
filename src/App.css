@@ -1,0 +1,270 @@
+.big-icon {
+  width: 20vmin;
+  height: 20vmin;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.small-icon {
+  width: 8.5vmin;
+  height: 8.5vmin;
+}
+
+.medium-icon {
+  width: 10vmin;
+  height: 10vmin;
+}
+
+.very-small-icon {
+  width: 4vmin;
+  height: 4vmin;
+}
+
+#dailyForecast {
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+}
+
+#forecast-header {
+  width: 90vw;
+  background-color: #58BDD3;
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#forecast-header > .overview {
+  padding: 20px;
+  margin: 0;
+}
+
+#page1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background: linear-gradient(#E8E8E8, #69E4FF );
+  background-repeat: no-repeat;
+}
+
+#page2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background: #69E4FF;
+  background-repeat: no-repeat;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2vmin;
+}
+
+#title-container {
+  width: fit-content;
+  margin-top: 40px;
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  flex-direction: row;
+}
+
+#city {
+  font-size: 2.5em;
+  font-weight: 400;
+  margin: 4vmin 0 0 0;
+}
+
+#description {
+  margin: 0px;
+  font-size: 1.5em;
+  color: #34363B;
+  font-weight: 300;
+}
+
+.city-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#temp{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 3.5em;
+  margin: 10px 0 0 0;
+}
+
+h3 {
+  margin: 0;
+  font-weight: 300;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5em;
+  color: #34363B;
+}
+
+#info {
+  margin: 80px 0 0 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+#info > div > h3 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #34363B
+}
+
+#info > div > p {
+  margin: 10px 0 80px 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  font-weight: 400;
+  color: #34363B
+}
+
+h2 {
+  font-size: 3.5em;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+}
+
+.percipitation{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.percipitation > p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  font-weight: 500;
+  color: #47008E;
+  margin-bottom: -10px;
+}
+
+.wind > div {
+  margin-left: 15px;
+}
+
+.wind > div > p {
+  margin: 2px;
+}
+
+.wrapper {
+  border-radius: 4vmin 4vmin 0 0;
+  margin-top: 8vmin;
+  transition: all 300ms;
+}
+
+.highlight {
+  background-color: #63D4ED;
+  border-radius: 4vmin 4vmin 0 0;
+  margin-top: 8vmin;
+}
+
+.overview {
+  margin: 5vmin;
+}
+
+.overview > h4 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #34363B;
+  font-weight: 300;
+  font-family: 'Quicksand', sans-serif;
+} 
+
+.overview > p {
+  margin: 10px 0 0 0;
+  font-size: 1.75em;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+} 
+
+.threeHourForecast {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0;
+}
+
+.threeHourForecast > h2 {
+  font-size: 2.5em;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+}
+
+.time > h2 {
+  font-size: 2em;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.time > p {
+  font-size: 1em;
+  font-weight: 300;
+  font-family: 'Quicksand', sans-serif;
+}
+
+#forecast-header {
+  overflow: auto;
+}
+
+.wind{
+  display: flex;
+  flex-direction: row;
+}
+
+#forecast-content {
+  background-color: #63D4ED;
+}
+
+.divider-long{
+  height: 1px;
+  background-color: black;
+}
+
+.divider-short{
+  height: 1px;
+  width: 100%;
+  background-color: black;
+}
+
+.rise {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px 0 10px;
+  padding: 0;
+}
+
+.rise > p {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+}
+
+.rise > img {
+  margin: -10px 0 0 0;
+}
+
+.divider{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
