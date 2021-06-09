@@ -23,7 +23,7 @@ export const getHours = (dt)=>`${new Date(1000 * dt).getHours()}:00`;
 
 export const getWindDir = deg => ["northerly", "easterly", "southerly", "westerly"][Math.round(deg/90) % 4];
 
-export const getWeekday = dt => ["Monday", "Tuesday", "Wendsday", "Thursday", "Friday", "Saturday", "Sunday"][new Date(dt*1000).getDay()-1];
+export const getWeekday = dt => ["Sunday", "Monday", "Tuesday", "Wendsday", "Thursday", "Friday", "Saturday"][new Date(dt*1000).getDay()];
 
 export const getImage = (path) => `${process.env.PUBLIC_URL}/${path}`;
 
